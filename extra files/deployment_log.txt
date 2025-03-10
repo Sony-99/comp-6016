@@ -1,0 +1,82 @@
+2024-09-24 03:33:02 - Script started.
+2024-09-24 03:33:02 - Creating GKE cluster...
+2024-09-24 03:38:23 - GKE cluster created in 321 seconds.
+2024-09-24 03:38:23 - Fetching cluster credentials...
+2024-09-24 03:38:25 - Cluster credentials fetched in 2 seconds.
+2024-09-24 03:38:25 - Deploying Nginx application...
+2024-09-24 03:38:30 - Nginx application deployed in 5 seconds.
+2024-09-24 03:38:30 - Deleting GKE cluster...
+2024-09-24 03:41:42 - GKE cluster deleted in 192 seconds.
+2024-09-24 03:41:42 - Script completed.
+2024-09-24 03:53:16 - Script started.
+2024-09-24 03:53:16 - Creating GKE cluster...
+2024-09-24 03:58:57 - GKE cluster created in 341 seconds.
+2024-09-24 03:58:57 - Fetching cluster credentials...
+2024-09-24 03:58:59 - Cluster credentials fetched in 2 seconds.
+2024-09-24 03:58:59 - Deploying Nginx application...
+2024-09-24 03:59:06 - Nginx application deployed in 7 seconds.
+2024-09-24 03:59:06 - Deleting GKE cluster...
+2024-09-24 04:00:01 - Script is already running. Exiting.
+2024-09-24 04:03:45 - GKE cluster deleted in 279 seconds.
+2024-09-24 04:03:45 - Script completed.
+2024-09-24 04:10:01 - Script started.
+2024-09-24 04:10:01 - Creating GKE cluster...
+/home/sony/comp-project/gke_deploy.sh: line 28: gcloud: command not found
+2024-09-24 04:10:01 - GKE cluster created in 0 seconds.
+2024-09-24 04:10:01 - Fetching cluster credentials...
+/home/sony/comp-project/gke_deploy.sh: line 38: gcloud: command not found
+2024-09-24 04:10:01 - Cluster credentials fetched in 0 seconds.
+2024-09-24 04:10:01 - Deploying Nginx application...
+error: error validating "https://k8s.io/examples/application/deployment.yaml": error validating data: failed to download openapi: <html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s'/><script>window.location.replace('/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s');</script></head><body style='background-color:white; color:white;'>
+
+
+Authentication required
+<!--
+-->
+
+</body></html>; if you choose to ignore these errors, turn validation off with --validate=false
+2024-09-24 04:10:03 - Nginx application deployed in 2 seconds.
+2024-09-24 04:10:03 - Deleting GKE cluster...
+/home/sony/comp-project/gke_deploy.sh: line 58: gcloud: command not found
+2024-09-24 04:10:03 - GKE cluster deleted in 0 seconds.
+2024-09-24 04:10:03 - Script completed.
+2024-09-24 04:20:01 - Script started.
+2024-09-24 04:20:01 - Creating GKE cluster...
+/home/sony/comp-project/gke_deploy.sh: line 28: gcloud: command not found
+2024-09-24 04:20:01 - GKE cluster created in 0 seconds.
+2024-09-24 04:20:01 - Fetching cluster credentials...
+/home/sony/comp-project/gke_deploy.sh: line 38: gcloud: command not found
+2024-09-24 04:20:01 - Cluster credentials fetched in 0 seconds.
+2024-09-24 04:20:01 - Deploying Nginx application...
+error: error validating "https://k8s.io/examples/application/deployment.yaml": error validating data: failed to download openapi: <html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s'/><script>window.location.replace('/login?from=%2Fopenapi%2Fv2%3Ftimeout%3D32s');</script></head><body style='background-color:white; color:white;'>
+
+
+Authentication required
+<!--
+-->
+
+</body></html>; if you choose to ignore these errors, turn validation off with --validate=false
+2024-09-24 04:20:01 - Nginx application deployed in 0 seconds.
+2024-09-24 04:20:01 - Deleting GKE cluster...
+/home/sony/comp-project/gke_deploy.sh: line 58: gcloud: command not found
+2024-09-24 04:20:01 - GKE cluster deleted in 0 seconds.
+2024-09-24 04:20:01 - Script completed.
+2024-09-25 08:08:18 - Script started.
+2024-09-25 08:08:18 - Creating GKE cluster...
+Default change: VPC-native is the default mode during cluster creation for versions greater than 1.21.0-gke.1500. To create advanced routes based clusters, please pass the `--no-enable-ip-alias` flag
+Note: The Kubelet readonly port (10255) is now deprecated. Please update your workloads to use the recommended alternatives. See https://cloud.google.com/kubernetes-engine/docs/how-to/disable-kubelet-readonly-port for ways to check usage and for migration instructions.
+Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+Creating cluster my-cluster in us-central1-a...
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................aborted by ctrl-c.
+ERROR: (gcloud.container.clusters.create) Aborted by user.
+2024-09-25 08:13:44 - Fetching cluster credentials...
+Fetching cluster endpoint and auth data.
+WARNING: cluster my-cluster is not RUNNING. The kubernetes API may or may not be available. Check the cluster status for more information.
+kubeconfig entry generated for my-cluster.
+2024-09-25 08:13:47 - Deploying Nginx application...
+deployment.apps/nginx-deployment created
+2024-09-25 08:13:52 - Deleting GKE cluster...
+ERROR: (gcloud.container.clusters.delete) Some requests did not succeed:
+ - ResponseError: code=400, message=Operation operation-1727251704025-50c376b0-31a3-4edc-ac50-6cd078940f9d is currently creating cluster my-cluster. Please wait and try again once it is done.
+
+2024-09-25 08:13:54 - Run completed.
